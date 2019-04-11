@@ -1,0 +1,19 @@
+#Compose that
+version: '3'
+services:
+  #----- SERVICE 1 ------
+  server:
+    #To build this service use image from dockerfile in directory dbServer
+    build: ./servidor
+    #PortExposedContainer:PortHostMachine
+    ports:
+      - '80:80'
+  #---- CLIENTE 1 ------      
+  client:
+    #To build this service use image from dockerfile in directory nodeServer
+    build: ./cliente
+  #---- CLIENTE 2 ------      
+  client2:
+    #To build this service use image from dockerfile in directory nodeServer
+    build: ./cliente  
+#END OF ALL THE SERVICES

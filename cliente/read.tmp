@@ -1,0 +1,9 @@
+conn 192.168.99.100:80
+hola
+conn 0.0.0.0:80
+a
+conn 192.168.99.100:80
+conn
+conn as
+:80
+conn
